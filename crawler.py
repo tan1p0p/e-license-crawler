@@ -112,3 +112,6 @@ if len(free_times) > 0:
     free_times.append('上記の枠が空いています!!')
     free_times.append(f'\n{os.path.join(E_BASE_URL, E_MOBILE_HREF)}')
     notify_line(free_times)
+    print('There are free time!! We send LINE message :)')
+else:
+    print('There are no free time now :(')
