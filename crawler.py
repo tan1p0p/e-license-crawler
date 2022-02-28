@@ -49,7 +49,6 @@ def session_acccess(href, param=None):
     time.sleep(1)
     if 'システムメンテナンス' in response.text:
         notify_texts = ['システムメンテナンス中です']
-        notify_texts.append(f'\n{os.path.join(E_BASE_URL, E_MOBILE_HREF)}')
         notify_line(notify_texts)
         print('This page in maintenance.')
     else:
